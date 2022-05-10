@@ -2,7 +2,7 @@
  
 Hello buddies!!
 
-I have created a console based banking in Library management program. Here you can create new account or log in to an existing account.
+I have created a console based Library management program. Here you can create new account or log in to an existing account.
 You will be able to add new book, make changes to the book. Furthermore just like a real library you can lend and return book for certain amount of period.
 Lastly, you can request any book and that data will be stored in a text based file.
 Out program is also capable of providing link for the book on online.
