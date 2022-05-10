@@ -1,0 +1,82 @@
+ "Uncensored Library"
+
+When program is runned it will ask for the login Id and password if logged in then continue.
+If the user is new and want to register then go to register function.
+
+1 New book
+-> It will ask for author, name,date, publication house name of the book
+-> check if the book name is alphabetic or alphanumeric, author name is alphabetic
+-> check proper date of release
+-> publication house name should be alphabetic or alphanumeric.
+-> after all the details show all details and ask if it is correct or not.
+-> If yes, save the book in the library and also save the id by whom it is added. or else ask again which details from ( author, name,date, publication house name) is wrong and enter again. then ask again if yes then save or else ask again.
+-> also check if the book is already in there or not by checking the name of book, author and date of release.
+-> Set the state of the book "in lib" initially while adding.
+-> it will also add the date when this book was 1st released in library.
+-> while adding new book create an 7 digit unique number for each book while storing a book.
+
+2 Delete Book
+-> can only be done by library manager
+-> others can request to delete book by asking serial number, book name, author, release year.
+-> for library manager to delete book he have to enter serial number, book name, author, release year.
+-> when status is "in lib" then only it can be deleted.
+
+3 Make changes
+-> can only be done by library manager
+-> ask what to change like name of book, publication house name, author or release year.
+-> gointo the function according to need.
+-> ask if the details are coorect or not. if yes then save or else ask again.
+
+4 To see books in library
+-> ask for name of book, release year, author name.
+-> else if they want to see bundle of all the book in a particular year they are release then ask for author name or year and show all books released in that particular year or by that author.
+-> it will display author name, book name, release year, serial number, publication house, ,
+also on which site it is available.
+
+5 change state of a book
+-> can only be done by library manager
+
+6 To lend / return a book
+-> ask for the user id, book name, book serial number, 
+->it will send request for lending if it is "in lib" or else not and show message that when available email will be sent to you, if  that id have any charges then book can't be lended.
+it will add the date of lending and due date.
+
+-> if returning then ask for the serial number, book name, id of the user. return book by checking the charges available on that id or not. also change the state of the book to "in lib". when returning if the charges are paid then set charges to 0, remove the due date also.
+
+
+7 Give Charges
+-> it is automatic function which will check when program is runned.
+-> if the due date is passed then it will provide charges of $1.00/day to that user id
+ 
+
+8 Request a book
+-> it wil ask user for book name, author, release year, publication name.
+-> display message that shows "your request has been saved and proceed in 2-3 business days."
+
+9 Find the book online
+-> it will display the link which will redirect them to the page where that book is available.
+-> this is automated function which will search the book in the book section of the google.
+-> after finding the book it will show it in the see function.
+
+10 Register
+-> Asks for name, dob, city of living, address, email, phone number, pin
+-> check if name is alphabetic, check dob format, check city of living is alphabetic, address isalphabetic or alphanumeric, phonenumber is numeric and 10 digit long, pin must be of 5 digit and it should not be in chronological order.
+-> save all details in the user's excel sheet. when creating it will generate 10 digit unique id
+
+# only for user
+11 display the users book lended, leding data, and due date, charges.
+
+make 2 different class when logged in 
+if logged in as manager it will have all options like add new, change, delete, change state, lend book, give charges, change , request.
+
+for others it only have see, lend, new, delete, request options, online book.
+
+
+make 2 excel sheet 1 with users data, 2nd with book data, 3rd sheet with the history which includes any activity and it can be seen by only librarian.
+-> Sheet 1: user's data
+this sheet have columns like user id, name, dob, email, phone number, pin, city of living, address, charges, book on hold name, due date. 
+-> Sheet 2: books
+This sheet includes serial number, book name, author, release year, publication house, added date, by whom it is added, status of book
+-> Sheet 3: history
+It will include the book name, serial number, state of the book, by whom it is lended, on which date it is lended, due date, returned date, change in state of book.
+

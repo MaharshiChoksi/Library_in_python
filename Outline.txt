@@ -1,0 +1,47 @@
+Users can see book without logging but for other function they have to log in.
+If user id not found then it will show message that user not found and ask for registration.
+If logged in or registered then it will change the state to log in and other functions like lend, request book will be accessible
+
+
+1). For new book->It will contain details like name, author, date and publication house name
+
+2). To delete book-> It will ask for the author and name of the book
+ask for library manager id and password.
+
+3). To change the book-> It will ask for the name and the year of the book publication
+change any detail can only be done by library manager
+
+4). To see the book-> Ask for the year and name of the book.
+display name, description, author, date of release, date when launched in library, publication name.
+while displaying the details of book then it will also show the website like amazon on which book is available or not.
+
+5). State-> to change the state of book (In lib, on hold, on loan, not available)
+
+6). To lend book-> which will lend book or return the book
+->it will send request for lending if it is "in lib" or else not and show message that when available email will be sent to you, if 
+that id have any charges then book can't be lended.
+
+->if returning then ask for the serial number, book name, id of the user. return book by checking the charges available on that id or not. als change the state of the book to "in lib"
+
+7). Give charges-> if the book is not returned after due date of 10 days then it will add charges to that user
+
+9). request -> which will request for new book via email by user
+
+10). find the book online on amazon
+
+11). Register (asks for name, dob, city of living, address, email, phone number, pin)
+
+Use OOP like classes and objects in it
+
+Make a GUI based version using tkinter
+
+Save details in excel
+
+NOTE:
+check if  the name of the book is alphanumeric or alphabetic.
+check the date
+check the author name is alphabetic
+
+to delete, change , give charges the book can be changed by the library manager
+see, lend,request, state, find_online  function, user account is public.
+

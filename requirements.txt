@@ -1,0 +1,7 @@
+These are the following modules which are needed to run the code.
+1). datetime
+2). openpyxl.styles
+3). colorama
+4). time
+5). random
+6). threading
